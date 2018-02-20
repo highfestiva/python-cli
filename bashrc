@@ -4,3 +4,7 @@ alias ll='ls -l'
 alias la='ls -A'
 alias lal='ls -Al'
 alias l='ls -CF'
+
+if [ -f .pyconrun.sh ]; then
+    exec ./.pyconrun.sh
+fi
